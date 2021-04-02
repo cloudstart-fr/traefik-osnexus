@@ -1,21 +1,19 @@
 
 ## How to access to QuantaStor S3 storage throught reverse proxy Traefik
 
-
-### Environnement S3
-
-accés aux services
-
 Reverse Proxy Traefik 1.7
 
-[S3 endpoint](https://s3.dev.cloudstart.fr).
+[QuantaStor management](https://osnexus.dev.cloudstart.fr)
 
-[QuantaStor management](https://osnexus.dev.cloudstart.fr).
 
-- Access key : zzzzzzzzzzzzzzzz
-- Secret Key : xxxxxxxxxxxxxx
+demo account (5GB quta)
 
-Status Services  [Uptime demo.lab](https://status.lab.cloudstart.fr).
+[S3 endpoint] https://s3.dev.cloudstart.fr
+
+- Access key : COTRB770JAD1A7TTF7NG
+- Secret Key : N0TafHLOA3TRr3QbBP5DzuPy8kNNaC65tr7Hlohd
+
+Status Services  [Uptime S3.QuantaStor](https://s3status.lab.cloudstart.fr)
 
 
  ### OSNEXUS
