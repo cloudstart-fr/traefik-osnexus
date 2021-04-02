@@ -5,9 +5,9 @@
 ```markdown
 Reverse Proxy Traefik 1.7
 
-[S3 endpoint] (https://s3.dev.clodustart.fr)
+[S3 endpoint](https://s3.dev.cloudstart.fr)
 
-[QuantaStor management] (https://ceph.dev.cloudstart.fr)
+[QuantaStor management](https://ceph.dev.cloudstart.fr)
 
 - Access key : zzzzzzzzzzzzzzzz
 - Secret Key : xxxxxxxxxxxxxx
