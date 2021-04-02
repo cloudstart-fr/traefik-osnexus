@@ -1,0 +1,47 @@
+debug = false
+
+logLevel = "DEBUG"
+defaultEntryPoints = ["https","http"]
+insecureSkipVerify = true
+
+[traefikLog]
+filepath = "/logs/traefik.log"
+
+[accessLog]
+filepath = "/logs/access.log"
+
+
+[entryPoints]
+
+  [entryPoints.http]
+  address = ":80"
+    [entryPoints.http.redirect]
+    entryPoint = "https"
+  [entryPoints.https]
+  address = ":443"
+  [entryPoints.https.tls]
+  users = ["user:password"]
+
+[retry]
+
+
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+domain = "mydomain.com"
+watch = true
+exposedByDefault = false
+
+[api]
+dashboard = true
+insecure = true
+
+[acme]
+email = "contact@mydomain.com"
+storage = "acme.json"
+entryPoint = "https"
+onHostRule = true
+[acme.httpChallenge]
+entryPoint = "http"
+
+[file]
+  filename = "servers.toml"

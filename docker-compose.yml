@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  proxy:
+    # Always use a proper version! (edited)
+    image: traefik:maroilles-alpine
+    
+    # Feel free to change the loglevel if needed
+    command: --web --docker --logLevel=INFO
+      - --metrics.prometheus=true
+    restart: on-failure
+    # unless-stopped
+
+    # Here's the network we created
+    networks:
+      - web
+    # The traefik entryPoints
+    ports:
+      - "80:80"
+        # - "8080:8080"
+      - "443:443"
+    labels:
+      # Make sure this domain points to your IP so that traefik can request a cert
+      - "traefik.frontend.rule=Host:mydomain.com"
+        # Traefik will proxy to its own GUI
+      - "traefik.port=8080"
+      - "traefik.frontend.auth.basic=username:password"
+    ## Static configuration
+        ## Static configuration
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/1.7/traefik.toml:/traefik.toml
+      - /home/1.7/servers.toml:/servers.toml
+      - /home/1.7/acme.json:/acme.json
+
+networks:
+  web:
+    external: true

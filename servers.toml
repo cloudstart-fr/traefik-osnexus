@@ -1,0 +1,47 @@
+loglevel = "ERROR"
+
+
+[backends]
+
+[backends.s3]
+    [backends.s3.circuitbreaker]
+    expression = "NetworkErrorRatio() > 0.5"
+    [backends.s3.servers.server1]
+    url = "https://10.xx.xx.yy:7480"
+    weight = 1
+    [backends.s3.servers.server2]
+    url = "https://10.xx.xx.qq:7480"
+    weight = 1
+    [backends.s3.servers.server3]
+    url = "https://10.xx.xx.yy:7480"
+    weight = 1
+
+[backends.ceph]
+        [backends.ceph.servers.ceph]
+        url = "https://10.xx.xx.rr:8080"
+
+
+
+[frontends]
+
+
+        [frontends.s3]
+                backend = "s3"
+        [frontends.s3.routes.s3]
+                rule = "Host:s3.mydomain.com"
+
+
+        [frontends.ceph]
+                entryPoints = ["http", "https"]
+                backend = "ceph"
+                passHostHeader = true
+                [frontends.ceph.headers]
+                  FrameDeny = true
+                  STSSeconds = 315360000
+                  STSIncludeSubdomains = true
+                  STSPreload = true
+                  ContentTypeNosniff = true
+                  BrowserXssFilter = true
+        [frontends.ceph.routes.ceph]
+                rule = "Host:osnexus.mydomain.com"
+
