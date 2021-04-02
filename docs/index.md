@@ -1,7 +1,7 @@
 
-## How to access to QuantaStor S3 storage throught reverse proxy Traefik
+## How to access to QuantaStor S3 storage throught Traefik
 
-(QuantaStoer 5.8 & Reverse Proxy Traefik 1.7)
+(QuantaStore 5.8 & Load Balancer Traefik 1.7)
 
 [QuantaStor management](https://osnexus.dev.cloudstart.fr)
 
