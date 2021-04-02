@@ -6,7 +6,6 @@
 
 accés aux services
 
-```markdown
 Reverse Proxy Traefik 1.7
 
 [S3 endpoint](https://s3.dev.cloudstart.fr).
