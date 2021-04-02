@@ -2,9 +2,6 @@
 
 Reverse Proxy Traefik 1.7
 
-# endpoint  https://s3.dev.cloudstart.fr
-
-
 [S3 endpoint] https://s3.dev.clodustart.fr 
 
 [QuantaStor management] https://ceph.dev.cloudstart.fr
@@ -13,6 +10,7 @@ Reverse Proxy Traefik 1.7
 - Secret Key : xxxxxxxxxxxxxx
 
 Etats des services  (https://status.lab.cloudstart.fr).
+
 
 
 ### OSNEXUS
