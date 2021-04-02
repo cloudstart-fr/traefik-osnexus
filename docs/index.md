@@ -1,6 +1,5 @@
 ## How to access to QuantaStor S3 storage throught reverse proxy Traefik
 
-```markdown
 Reverse Proxy Traefik 1.7
 
 # endpoint  https://s3.dev.cloudstart.fr
