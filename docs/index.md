@@ -6,7 +6,7 @@
 [QuantaStor management](https://osnexus.dev.cloudstart.fr)
 
 
-demo account (5GB quta)
+demo account (5GB quota)
 ### S3 endpoint https://s3.dev.cloudstart.fr
 
 - Access key : COTRB770JAD1A7TTF7NG
