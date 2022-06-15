@@ -1,20 +1,20 @@
 
-## How to access to QuantaStor S3 storage throught Traefik
+## How to access to S3 Bucket demo
 
-(QuantaStore 5.8 & Load Balancer Traefik 1.7)
+Scality
 
-[QuantaStor management](https://osnexus.dev.cloudstart.fr)
+[scality console](https://s3-ven.aci-cloud.com/_/s3browser/connect)
 
 
 demo account (5GB quota)
-### S3 endpoint https://s3.dev.cloudstart.fr
+### S3 endpoint https://s3-ven.aci-cloud.com
 
 - Access key : COTRB770JAD1A7TTF7NG
 - Secret Key : N0TafHLOA3TRr3QbBP5DzuPy8kNNaC65tr7Hlohd
 
-Status Services  [Uptime S3.QuantaStor](https://s3status.lab.cloudstart.fr)
+Status Services  [Uptime S3.SCality](https://status.oc.cloudstart.fr)
 
 
- ### OSNEXUS
+ ### SCALITY
 
-[documentation](https://wiki.osnexus.com/) 
+[documentation](https://www.scality.com/fr-fr/products/ring) 
